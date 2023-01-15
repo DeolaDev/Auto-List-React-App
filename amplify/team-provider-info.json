@@ -10,6 +10,14 @@
       "StackName": "amplify-autolistreactapp-dev-22558",
       "StackId": "arn:aws:cloudformation:ca-central-1:356046674653:stack/amplify-autolistreactapp-dev-22558/dba8a250-94a5-11ed-bd9e-027234c21a0e",
       "AmplifyAppId": "d3f5zbvyu8n7ec"
+    },
+    "categories": {
+      "auth": {
+        "autolistreactappef69fa80": {}
+      },
+      "api": {
+        "autolistreactapp": {}
+      }
     }
   }
 }
