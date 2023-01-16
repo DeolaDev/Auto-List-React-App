@@ -13,11 +13,7 @@ import awsExports from "./aws-exports";
 //import * as AWS from "aws-sdk";
 //import { ConfigurationOptions } from "aws-sdk";
 
-/*const configuration: ConfigurationOptions = {
-    region: "ca-central-1",
-    secretAccessKey: "0UmnsUQ+8AkW4SbKzDMikQ/th0yMTCmAhgxHx0jR",
-    accessKeyId: "AKIAVFZQJDLORBVB4DDI",
-  };*/
+
 
 Amplify.configure(awsExports);
 //Amplify.configure(awsmobile);
