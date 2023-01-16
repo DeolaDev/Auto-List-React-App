@@ -1,25 +1,36 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+//import ReactDOM from "react-dom"; // added
 import "./index.css";
 import App from "./App";
-import AppHeader from "./AppHeader";
 import reportWebVitals from "./reportWebVitals";
 import { Amplify } from "aws-amplify";
-// import awsmobile from "./aws-exports"; - I added this
+//import awsmobile from "./aws-exports";
 
 import awsExports from "./aws-exports";
 
+// STARTS HERE
+//import * as AWS from "aws-sdk";
+//import { ConfigurationOptions } from "aws-sdk";
+
+/*const configuration: ConfigurationOptions = {
+    region: "ca-central-1",
+    secretAccessKey: "0UmnsUQ+8AkW4SbKzDMikQ/th0yMTCmAhgxHx0jR",
+    accessKeyId: "AKIAVFZQJDLORBVB4DDI",
+  };*/
+
 Amplify.configure(awsExports);
-//Amplify.configure(awsmobile); - and this
+//Amplify.configure(awsmobile);
+// AWS.config.update(configuration);
+// ENDS HERE
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <AppHeader />
     <App />
   </React.StrictMode>
 );
-
+document.getElementById("root");
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
